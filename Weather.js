@@ -132,7 +132,8 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     color: "white",
     fontSize: 24,
-    textAlign: "left"
+    textAlign: "left",
+    marginBottom: 50,
   },
   textContainer: {
     alignItems: "flex-start",
