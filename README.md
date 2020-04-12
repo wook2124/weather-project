@@ -8,7 +8,7 @@ Learning React Native by building a weather-project App `2020.04.02 ~ 2020.04.12
 
 ## Demo Video
 
-![](demo.gif)
+![](weather-project_demo.gif)
 
 ## Project Description 
 
