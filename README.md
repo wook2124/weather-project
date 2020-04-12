@@ -4,7 +4,6 @@ Learning React Native by building a weather-project App `2020.04.02 ~ 2020.04.12
 
 ## Demo Link
 
-- [Weather App](https://wook2124.github.io/movie_app/)
 - [Expo QR Code](https://expo.io/@wook2124/weather-project)
 
 ## Demo Video
@@ -18,8 +17,8 @@ This app informs the weather and temperature in real time according to the weath
 
 ## Customization: How to run this project
 
-Very simple. You Just click Weather App or Expo QR Code.  
-Weather App 혹은 Expo QR Code를 클릭하세요.
+Very simple. You can download the Expo app and check the Expo QR code.  
+Expo App을 다운받은 뒤, Expo App에서 QR code를 찍어서 확인하면 됩니다.
 
 ## What I used for this project 
 
