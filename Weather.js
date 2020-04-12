@@ -1,8 +1,8 @@
 import React from "react";
 import { View, Text, StyleSheet, StatusBar } from "react-native";
 import PropTypes from "prop-types";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 const weatherOptions = {
   Thunderstorm: {
@@ -16,6 +16,8 @@ const weatherOptions = {
   Rain: {
     iconName: "weather-rainy",
     gradient: ["#00C6FB", "#005BEA"],
+    title: "Rainy",
+    subtitle: "It's raining. Make sure to bring your umbrella.",
   },
   Snow: {
     iconName: "weather-snowy",
@@ -44,8 +46,6 @@ const weatherOptions = {
   Haze: {
     iconName: "weather-hail",
     gradient: ["#4DA0B0", "#D39D38"],
-    title: "Haze",
-    subtitle: "Just don't go outside.",
   },
 };
 
@@ -56,17 +56,19 @@ export default function Weather({ temp, condition }) {
       style={styles.container}
     >
       <StatusBar barStyle="light-content" />
-      <View style={styles.halfcontainer}>
+      <View style={styles.halfContainer}>
         <MaterialCommunityIcons
-          color="white"
           size={96}
           name={weatherOptions[condition].iconName}
+          color="white"
         />
         <Text style={styles.temp}>{temp}°</Text>
       </View>
-      <View style={styles.halfcontainer}>
-        <Text stlye={styles.title}>Title</Text>
-        <Text stlye={styles.subtitle}>Subtitle</Text>
+      <View style={{ ...styles.halfContainer, ...styles.textContainer }}>
+        <Text style={styles.title}>{weatherOptions[condition].title}</Text>
+        <Text style={styles.subtitle}>
+          {weatherOptions[condition].subtitle}
+        </Text>
       </View>
     </LinearGradient>
   );
@@ -98,20 +100,24 @@ const styles = StyleSheet.create({
     fontSize: 42,
     color: "white",
   },
-  halfcontainer: {
+  halfContainer: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
   },
   title: {
-    fontWeight: "300",
-    fontSize: 54,
     color: "white",
-    marginBottom: 5,
+    fontSize: 44,
+    fontWeight: "300",
+    marginBottom: 10,
   },
   subtitle: {
-    fontWeight: "600",
-    fontSize: 24,
     color: "white",
+    fontSize: 24,
+    fontWeight: "600",
+  },
+  textContainer: {
+    paddingHorizontal: 20,
+    alignItems: "flex-start",
   },
 });
