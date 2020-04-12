@@ -1,17 +1,33 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, StatusBar } from "react-native";
 import PropTypes from "prop-types";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { LinearGradient } from "expo-linear-gradient";
 
-export default function Weather({ temp }) {
+const weatherOptions = {
+  Haze: {
+    iconName: "weather-hail",
+    gradient: ["#aa4b6b", "#3b8d99"],
+  },
+};
+
+export default function Weather({ temp, condition }) {
   return (
-    <View style={styles.container}>
+    <LinearGradient
+      colors={weatherOptions["Haze"].gradient}
+      style={styles.container}
+    >
+      <StatusBar barStyle="light-content" />
       <View style={styles.halfcontainer}>
-        <MaterialCommunityIcons size={96} name="weather-snowy-rainy" />
+        <MaterialCommunityIcons
+          color="white"
+          size={96}
+          name={weatherOptions["Haze"].iconName}
+        />
         <Text style={styles.temp}>{temp}°</Text>
       </View>
       <View style={styles.halfcontainer} />
-    </View>
+    </LinearGradient>
   );
 }
 
@@ -39,6 +55,7 @@ const styles = StyleSheet.create({
   },
   temp: {
     fontSize: 42,
+    color: "white",
   },
   halfcontainer: {
     flex: 1,
