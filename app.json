@@ -23,6 +23,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "Learning React Native by building a weather-project App",
+    "githubUrl": "https://github.com/wook2124/weather-project"
   }
 }
