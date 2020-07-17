@@ -19,7 +19,7 @@ This app informs the weather and temperature in real time according to the weath
 ## Customization: How to run this project
 
 Very simple. You can download the Expo app and check the [Expo QR Code](https://expo.io/@wook2124/weather-project).  
-Expo App을 다운받은 뒤, Expo App에서 [Expo QR Code](https://expo.io/@wook2124/weather-project)를 찍어 확인하면 됩니다.
+Expo App을 다운받은 뒤, Expo App에서 [Expo QR Code](https://expo.io/@wook2124/weather-project)를 QR코드로 찍어 확인하면 됩니다.
 
 ## What I used for this project 
 
