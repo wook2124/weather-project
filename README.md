@@ -1,6 +1,6 @@
 # Weather Project App
 
-Learning React Native by building a weather-project App  
+Learning `React Native` by building a weather-project App  
 `2020.04.02 ~ 2020.04.12`
 
 ## Demo Link
