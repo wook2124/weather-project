@@ -13,7 +13,7 @@ Learning `React Native` by building a weather-project App
 
 ## Project Description 
 
-It is an app that informs the weather and temperature in real time according to the weather of the current location.
+It is an app that informs the weather and temperature in real time according to the weather of the current location.  
 현재 위치의 날씨에 맞게 실시간으로 날씨와 온도를 알려주는 앱입니다.
 
 ## Customization: How to run this project
