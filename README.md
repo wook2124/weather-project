@@ -6,6 +6,7 @@ Learning `React Native` by building a weather-project App
 ## Demo Link
 
 - [Expo QR Code](https://expo.io/@wook2124/weather-project)
+- [기획서_Plan](https://www.miricanvas.com/v/17mwhq)
 
 ## Demo Video
 
